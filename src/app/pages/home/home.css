@@ -1,0 +1,51 @@
+.home-wrapper {
+  background: url('/img/ranger.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.home-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(85, 107, 85, 0.6); /* um tom esverdeado/escuro conforme imagem */
+  z-index: 1;
+}
+
+.topbar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0; left: -250px;
+  width: 250px;
+  height: 100vh;
+  z-index: 20;
+  transition: left 0.3s ease;
+}
+.sidebar.open {
+  left: 0;
+}
+
+.content-container {
+  position: relative;
+  z-index: 5;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.welcome-card .card-header {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.text-info {
+  color: #17a2b8 !important;
+}

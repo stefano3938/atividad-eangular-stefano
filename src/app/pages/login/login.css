@@ -1,0 +1,13 @@
+.text-success {
+  color: #17a2b8 !important;
+}
+.btn-secondary {
+  background-color: #aeb6bf !important;
+}
+.input-group-text {
+  color: #28a745;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}

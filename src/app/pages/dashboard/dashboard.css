@@ -1,0 +1,45 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0; left: -250px;
+  width: 250px;
+  height: 100vh;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+.sidebar.open {
+  left: 0;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 0;
+  border: 1px solid #dee2e6 !important;
+}
+.card-header {
+  font-weight: 500;
+}
+
+.table th {
+  border: 1px solid white;
+}
+.table td {
+  vertical-align: middle;
+}
