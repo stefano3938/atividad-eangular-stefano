@@ -5,7 +5,7 @@ import { AuthService } from '../../services/auth';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, NgIf],
+  imports: [RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
